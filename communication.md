@@ -4,14 +4,14 @@ We're a distributed, remote-first team where people are allowed and encouraged t
 
 ### Internal Communication
 
-1. All written communication happens in Italian (we should communicate in English but we're not there yet). However we should strive to write as much tecnical documentation in English as possible.
+1. All written communication happens in Italian (we should communicate in English but we're not there yet). However we should strive to write as much technical documentation in English as possible.
 1. Use **asynchronous communication** when possible (stories/email/Slack).
 1. Stories are preferred over email, email is preferred over Slack, and people should be able to do their work without getting interrupted by chat.
 1. To use email instead of chat it is OK to send an internal email that contains only a short message, similar as you would use in chat. Save time by not including a salutation like 'Hi Emma,' and first write the subject of the email which you copy and paste into the body. You are not expected to be available all the time. It is perfectly fine not to respond to emails and chat mentions until your planned work hours.
 1. Sometimes synchronous communication is the better option, but do not default to it. For example, a video call can clear things up quickly when you are blocked. See the guidelines on video chats for more detail.
 1. It is very OK to ask as many questions as you have, but ask them so many people can answer them and many people see the answer (so use stories or public chat channels instead of private messages or one-on-one emails) and make sure you document the answers.
-1. If you mention something (a pull request, story, commit, webpage, comment, etc.) please include a link to it.
-1. All project data should be **shareable** by default. Don't use a local text file but rather leave comments on an story or in a shared Google doc.
+1. If you mention something (a pull request, story, commit, web page, comment, etc.) please include a link to it.
+1. All project data should be **shareable** by default. Don't use a local text file but rather leave comments on a story or in a shared Google doc.
 1. It is OK to bring an issue to someone's attention with a CC ("cc @user"), but CCs alone are not enough if specific action is needed from someone. The mentioned user may read the issue and take no further action. If you need something, please explicitly communicate your need along with @ mentioning who you need it from.
 1. Avoid creating private groups for internal discussions:
   1. It's disturbing (all user in the group get notified for each message).
@@ -64,7 +64,7 @@ We're a distributed, remote-first team where people are allowed and encouraged t
   1. A video call is limited in time: A conversation in an issue can start or stop at any time, whenever there's interest. It is async.
   1. A video call is limited in people: You can invite anybody into an async conversation at any time in an issue. You don't have to know who are the relevant parties ahead of time. Everyone can contribute at any time. A video call is limited to invited attendees (and those who have accepted).
   1. You can easily "promote" an async conversation from an issue to a video call, as needed. The reverse is harder. So there is lower risk to start with an async conversation.
-  1. For a newcomer to the conversation, it's easier and more efficient to parse an issue, than read a video transcript or watch it.
+  1. For a newcomer to the conversation, it's easier and more efficient to parse an issue, than to read a video transcript or watch it.
   1. Conversations in issues and stories are easily searchable. Video calls are not.
 1. Having pets, children, significant others, friends, and family visible during video chats is encouraged. If they are human, ask them to wave at your remote team member to say "Hi".
 1. We prefer Google Hangout.

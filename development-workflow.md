@@ -2,15 +2,15 @@
 
 ### Stories
 
-1. Always **create** a story for things you work on. If it is worth spending time on, it is worth creating a story since that enables other people to learn and help. You can always edit the description or close it when the problem changed to something different or was solved. (TODO: link to Pivotal projects)
-1. Not every solution will solve the problem at hand. Keep discussions focused by **defining the problem first**. Also don't rush to the first solution it comes to mind, unless the solution is obvious, try to propose multiple options and ask advice from business and product team-mates if needed.
+1. Always **create** a story for things you work on. If it is worth spending time on, it is worth creating a story since that enables other people to learn and help. You can always edit the description or close it when the problem changed to something different or was solved. _(TODO: link to Pivotal projects)_
+1. Not every solution will solve the problem at hand. Keep discussions focused by **defining the problem first**. Also, don't rush to the first solution it comes to mind, unless the solution is obvious, try to propose multiple options and ask advice from business and product team-mates if needed.
 1. **Double link** stories with related conversations. E.g. if there’s an Instabug ticket that causes you to open a story on Pivotal Tracker, make sure to document the story link in the Instabug issue and vice versa.
 1. If two stories are related, **crosslink** them (a link from each story to the other one). When a story blocks another story, use the blockers feature of Pivotal Tracker.
 1. After a discussion about a feature **update the story description** with the consensus or final conclusions. This makes it much easier to see the current state of a story for everyone involved in the implementation and prevents confusion and discussion later on.
 1. Submit the **smallest** item of work that makes sense. When creating a story describe the smallest fix possible, put suggestions for enhancements in separate stories and link them.
 1. Do not leave stories open for a long time, stories should be actionable and realistic. If you are assigned to a story but don't have time to work on it, assign it to someone else or move it to the _icebox_.
-1. Make a conscious effort to prioritize your work. The priority of items depends on multiple factors: Is someone waiting for the answer? What is the impact if you delay it? How many people does it affect, etc.? This is detailed in Engineering Workflow (TODO:).
-1. Pick stories from the the top of the backlog.
+1. Make a conscious effort to prioritize your work. The priority of items depends on multiple factors: Is someone waiting for the answer? What is the impact if you delay it? How many people does it affect, etc.? This is detailed in Engineering Workflow. _(TODO: link to engineering workflow)_
+1. Pick stories from the top of the backlog.
 1. Assign a story to yourself as soon as you start to work on it, but not before that time. If you complete part of a story and need someone else to take the next step, **re-assign** the story to that person.
 1. When re-assigning a story, make sure that the story description contains the latest information. The story description should be the **single source of truth**.
 1. Do not close a story until it is **done**.
@@ -56,9 +56,9 @@ Features and bugs have the following states:
 1. Add at least one human reviewer to your story.
 1. Press Finish on the story on Pivotal Tracker.
 1. Wait for at least one of the human reviewer to review the change.
-1. Update the master branch within your local repository with  git checkout master and git pull. If you have other branches that needs to be updated, then run also: `git checkout other-branch` and `git pull --rebase . master`. Note that subsequent pushes for these branches will require a `-f`
+1. Update the master branch within your local repository with `git checkout master` and `git pull`. If you have other branches that need to be updated, then run also: `git checkout other-branch` and `git pull --rebase . master`. Note that subsequent pushes for these branches will require a `-f`
 since history has been rewritten by rebasing.
-1. Deploy, or wait someone to deploy the newly written code.
+1. Deploy, or wait for someone to deploy the newly written code.
 1. Once deployed press `Deliver` on the story on Pivotal Tracker and add a comment with the release version that includes the PR.
 1. Based on how it goes the story will be accepted or rejected.
 
