@@ -49,6 +49,23 @@ We're a distributed, remote-first team where people are allowed and encouraged t
 1. It's not rude to leave a channel. When you've had your questions answered or are no longer interested, feel free to leave the channel so it won't distract you anymore.
 1. Learn about common channels and channel-naming conventions.
 
+#### Slack Channels
+
+The IO team is part of the [Developers Italia Slack organization](https://slack.developers.italia.it).
+To join our Slack channels you'll need to create an account on the Slack
+organization. The Slack organization is open and anybody can join it.
+
+The IO team hangs out in the following channels:
+
+* `#io-dev` - this is where most development activity happens, join this channel if you're actively contributing to the project
+* `#io-infra` - activity about the infrastructure that keeps IO up
+* `#io-handbook` - this is where we discuss about this handbook and propose changes
+* `#io-questions` - general questions about the project, this is a good place to ask questions about integrating with IO
+* `#io-random` - random discussions, sharing of interesting articles, chitchat
+* `#io-status` - this is populated by bots, sharing various alerts and status reports
+* `#io-ci` - this is populated by bots, sharing the status of our CI builds
+* `#io-github` - this is populated by bots, sharing the status of our Github activity
+
 ### Weekly Review and Planning calls
 
 1. Every Tuesday at 2pm CET we have the product review and planning call.

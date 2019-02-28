@@ -69,12 +69,3 @@ since history has been rewritten by rebasing.
 1. Include explanation comments in the PR: this can help the reviewers in making the review faster. At the same time try to be succinct, not verbose, comments should have a high informational density.
 1. Ask for feedback early by creating [draft pull requests](https://github.blog/2019-02-14-introducing-draft-pull-requests/). This can shorten dramatically approval and review time.
 
-### Programming Style
-
-#### Functional and immutability
-
-Whenever and wherever possible, prefer functional style over imperative and immutable data structure over mutable state.
-
-#### Tests
-
-We're not for the 100% coverage religion but you should write tests for the core of your app or usually for the part that is more fragile to changes.
