@@ -1,4 +1,4 @@
-## 🎼 DEVELOPMENT GUIDELINES
+## 👷🏻 DEVELOPMENT GUIDELINES
 
 ### General Guidelines
 
