@@ -7,7 +7,7 @@ The idea is this notebook to become something like [Gitlab’s](https://about.gi
 **Team**
 
 1. 🌍 [General Guidelines](general.md)
-1. 📘 [How To Use This Book](how-to.md)
+1. 📘 [How To Use This Handbook](how-to.md)
 1. ☎️ [Communication](communication.md)
 1. 👨‍💻 [Who Does What?](who-does-what.md)
 1. 💡 [Development Workflow](development-workflow.md)
