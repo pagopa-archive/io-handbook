@@ -15,6 +15,7 @@
 1. When re-assigning a story, make sure that the story description contains the latest information. The story description should be the **single source of truth**.
 1. Do not close a story until it is **done**.
 1. When closing a story leave a comment explaining why you are closing it.
+1. If a fix/implementation gets merged to master, add a comment with the expected release version(s) that will include it.
 
 #### Stories Guidelines
 
@@ -69,3 +70,9 @@ since history has been rewritten by rebasing.
 1. Include explanation comments in the PR: this can help the reviewers in making the review faster. At the same time try to be succinct, not verbose, comments should have a high informational density.
 1. Ask for feedback early by creating [draft pull requests](https://github.blog/2019-02-14-introducing-draft-pull-requests/). This can shorten dramatically approval and review time.
 
+### Instabug
+
+1. When a user opens a new bug via Instabug, a _Bug_ story gets automatically created on Pivotal in the _Icebox_.
+1. If you feel the bug is critical, move the story to the _Backlog_ and (possibly) assign it to yourself.
+1. When a fix gets released, go to Instabug and reply to the user that opened the bug telling him a fix is coming soon, mention the iOS/Android release version that is expected to fix the issue.
+1. When the story gets accepted, mark the Instabug issue as closed.
