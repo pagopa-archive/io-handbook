@@ -55,6 +55,7 @@ Features and bugs have the following states:
 1. Prepend the pull request title with the Story #. Examples: `[#12345] Fixes payment button`.
 1. If the Pull Request is still a work in progress, create a [draft pull request](https://github.blog/2019-02-14-introducing-draft-pull-requests/).
 1. Add at least one human reviewer to your story.
+1. Attach the Pull Request to the story by clicking on the _Attach from Github_ link in the story page and pasting the PR URL.
 1. Press Finish on the story on Pivotal Tracker.
 1. Wait for at least one of the human reviewer to review the change.
 1. Update the master branch within your local repository with `git checkout master` and `git pull`. If you have other branches that need to be updated, then run also: `git checkout other-branch` and `git pull --rebase . master`. Note that subsequent pushes for these branches will require a `-f`
