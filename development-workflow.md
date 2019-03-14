@@ -1,5 +1,56 @@
 ## 💡 DEVELOPMENT WORKFLOW
 
+### Design
+
+To thoroughly analyze and discuss non-trivial decisions or features, we rely
+on collaborative document editing, taking several iterations of proposals and
+feedbacks before the actual planning and implementation.
+
+#### Memos
+
+Macro changes that impact the software and system architecture such as logging,
+authentication, integration between components and 3rd party systems, format and
+structure of data etc. must be initially outlined in a document (_memo_) that is
+shared and discussed with the rest of the team. Memos are also useful for describing high-level activities not necessarily related to software development - for example: topics related to the legal aspects of the project or the interaction with public subjects.
+
+For hystorical reasons the memos are called CDMs (_Cittadinanza Digitale Memos_)
+and are stored in a publicly accessible folder named [CDM](https://drive.google.com/drive/folders/1nmPZqEzH9aN_5qFJbd36vS3v7leUcJx0) in the Digital Team Google Drive.
+
+All team members are invited to write new memos and comment existing memos.
+
+##### Creating a new CDM
+
+New memo documents must be named `CDM-{n} - {title}` where `n` is an incremental
+number (one plus the highest memo in the CDM folder) and `title` is a short title describing the proposal (when in doubt try to be consistent with the current CDMs or ask advice in the `#io-dev` channel).
+
+We currently write CDMs in the Italian language (but if you feel like writing in English, you are welcome to do so).
+
+The CDM should be roughly structured as following:
+
+* A title (same as the name of the document)
+* Author
+* Current state of the document (i.e. work in progress, waiting for review, planned, implemented)
+* A _Context_ (_Contesto_) section where we explain why the document has been written (i.e. the starting point, the need, the current state of things)
+* A _Proposal_ (_Proposta_) section where we explain what the CDM is proposing to implement or change, how this proposal solves a certain need or problem and (if applicable) what are the effects on other systems.
+
+##### Asking for feedback
+
+Once the first draft has been completed, the author shares the document with the
+team in the `#io-dev` Slack channel, asking for feedback.
+
+There may be several iterations of feedbacks/comments and updates.
+
+##### Implementation
+
+Once a CDM is finalized and approved for implementation, it must be translated
+into development stories that get added to the backlog of each affected component.
+
+#### Architecture Decision Records
+
+For registering architectural decisions we rely on [Architecture Decision Records](https://github.com/joelparkerhenderson/architecture_decision_record#architecture-decision-record-adr) (ADR):
+
+See the [ADRs repository](https://github.com/teamdigitale/digital-citizenship/tree/master/architecture/decisions).
+
 ### Stories
 
 1. Always **create** a story for things you work on. If it is worth spending time on, it is worth creating a story since that enables other people to learn and help. You can always edit the description or close it when the problem changed to something different or was solved. _(TODO: link to Pivotal projects)_
