@@ -13,3 +13,4 @@ The idea is this notebook to become something like [Gitlab’s](https://about.gi
 1. 💡 [Development Workflow](development-workflow.md)
 1. 👷🏻 [Development Guidelines](development-guidelines.md)
 1. 👨🏻‍🏫 [Program Management](program.md)
+1. 👨‍🎓 [People Management](people.md)
