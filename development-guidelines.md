@@ -61,7 +61,7 @@ Pull Request and implement the changes necessary or suggested.
 
 ### Third-party libraries
 
-IO project uses several 3th part open source libraries. When including or updating a library could happen that the library's code should be fixed. In that case two options can be evaluated:
+IO project uses several third-party open source libraries. When including or updating a library could happen that the library's code should be fixed. In that case two options can be evaluated:
 
 1. fork the original project (the one where the library come from), patch it, and then refer the forked library into *packages.json*
 2. use a post install patch to fix the original library code [patch-package](https://www.npmjs.com/package/patch-package) 
