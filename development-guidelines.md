@@ -57,3 +57,11 @@ workflow:
 
 Always check the feedback that these tools automatically provide to each
 Pull Request and implement the changes necessary or suggested.
+
+
+### Third-party libraries
+
+IO includes several third-party open source libraries in its components. When including or updating a library it could happen that the library's code needs some changes (e.h. bugfixes). In that case two options can be evaluated:
+
+1. fork the original github repository (the one where the library comes from), patch it, and then [set the dependency to the forked repo](https://docs.npmjs.com/files/package.json#github-urls) from `package.json`
+2. create a [post install patch](https://www.npmjs.com/package/patch-package) to fix the original library code
