@@ -6,7 +6,8 @@ Below you'll find a list of the major groups within the team. They're listed in 
 
 ### Software Engineering and Infrastructure
 
-1. **Federico Feroldi** (Team per la Trasformazione Digitale): the CTO of the project, responsible for technology, architecture, software development process and practices and code.
+1. **Federico Feroldi** (Team per la Trasformazione Digitale): CTO and project management.
+1. Matteo Boschi (Team per la Trasformazione Digitale): mobile app development
 1. Luca Morelli (Wellnet): mobile app and backend development
 1. Francesco Persico (Wellnet): mobile app development
 1. Danilo Spinelli (AgID): frontend, backend and infrastructure development
@@ -14,10 +15,12 @@ Below you'll find a list of the major groups within the team. They're listed in 
 
 ### Product Management
 
-1. **Matteo De Santi** (Team per la Trasformazione Digitale): product strategy and UX design
+1. **Matteo De Santi** (Team per la Trasformazione Digitale): product strategy and UX
 
 ### Program Management
 
 1. **Matteo De Santi** (Team per la Trasformazione Digitale): institutional relations
 1. **Giuseppe Virgone** (Team per la Trasformazione Digitale): strategy, institutional relations
-1. **Mirko Calvaresi** (Team per la Trasformazione Digitale): institutional relations
+1. Roberta Tassi (Team per la Trasformazione Digitale): customer success
+
+
