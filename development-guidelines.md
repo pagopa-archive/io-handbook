@@ -2,11 +2,12 @@
 
 ### General Guidelines
 
-* All the code is open source and published on GitHub.
-* Do not use classes unless absolutely necessary; keep data (structures) and behaviors (functions) separate
-* Whenever and wherever possible, prefer functional style over imperative and immutable data structure over mutable state.
-* We're not for the 100% coverage religion but you should write tests for the core of your app or usually for the part that is more fragile to changes.
-* Use the OpenAPI standard to defining REST APIs exposed to clients. Follow [Zalando Guidelines](http://zalando.github.io/restful-api-guidelines/) when designing your APIs.
+1. All the code is open source and published on GitHub.
+1. Do not use classes unless absolutely necessary; keep data (structures) and behaviors (functions) separate
+1. Whenever and wherever possible, prefer functional style over imperative and immutable data structure over mutable state.
+1. Keep each individual change small: only change the minimum amount of code needed to accomplish the purpose of your pull request (i.e. do not change the format of the code if that's not the purpose of your change).
+1. We're not for the 100% coverage religion but you should write tests for the core of your app or usually for the part that is more fragile to changes.
+1. Use the OpenAPI standard to defining REST APIs exposed to clients. Follow [Zalando Guidelines](http://zalando.github.io/restful-api-guidelines/) when designing your APIs.
 
 ### TypeScript
 
