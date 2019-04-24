@@ -76,7 +76,7 @@ The IO team hangs out in the following channels:
     1. We start reviewing each story in the the backlog from the top (first the work in progress stories, then the unstarted stories).
     1. Since the backlog is looooong and we don't have all day, we try to keep the discussion of each story short (usually under 5 minutes) - this is also as a form of respect to the participants' time as the discussion of a single story usually happens between 2-3 people (agains 10+ participating in the call).
     1. If a story is labeled `on-hold` we skip it, unless somebody has some reason to un-hold it.
-    1. I the story is still in progress, the story owner updates the rest of the team about the status. The story gets updated in case some blockers emerge.
+    1. If the story is still in progress, the story owner updates the rest of the team about the status. The story gets updated in case some blockers emerge.
     1. Stories get updated or new stories get created right away in case the scope of an existing story is incomplete.
     1. Any decision or clarification about a story gets written down in a comment for that story for future reference (also because there may be some team member missing during the call and they would miss this information if we don't write it down).
     1. If a story has been delivered and not yet accepted or rejected, if it's possible to verify its status quickly, we do it by accepting or rejecting it right away.
