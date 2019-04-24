@@ -70,7 +70,23 @@ The IO team hangs out in the following channels:
 
 1. Every Tuesday at 2pm CET we have the product review and planning call.
 1. We use Google Hangout
-1. It is OK to talk over people or interrupt people to ask questions, cheer for them or show your compassion. This encourages more conversation and feedback in the call. Also see the interruption item in video calls.
+1. It is OK to talk over people or interrupt people to ask questions, cheer for them or show your compassion. This encourages more conversation and feedback in the call. Also see the interruption item in the video calls below.
+1. The sprint planning and review call is structured as follows:
+    1. We start with some greetings and chitchat while we wait for all the participants to join (max 5 minutes).
+    1. We start reviewing each story in the the backlog from the top (first the work in progress stories, then the unstarted stories).
+    1. Since the backlog is looooong and we don't have all day, we try to keep the discussion of each story short (usually under 5 minutes) - this is also as a form of respect to the participants' time as the discussion of a single story usually happens between 2-3 people (agains 10+ participating in the call).
+    1. If a story is labeled `on-hold` we skip it, unless somebody has some reason to un-hold it.
+    1. I the story is still in progress, the story owner updates the rest of the team about the status. The story gets updated in case some blockers emerge.
+    1. Stories get updated or new stories get created right away in case the scope of an existing story is incomplete.
+    1. Any decision or clarification about a story gets written down in a comment for that story for future reference (also because there may be some team member missing during the call and they would miss this information if we don't write it down).
+    1. If a story has been delivered and not yet accepted or rejected, if it's possible to verify its status quickly, we do it by accepting or rejecting it right away.
+    1. We try to keep technical discussions about a story outside this call (either in the story comments, in its PR comments or with a dedicated call).
+    1. When we completed reviewing the current stories, we proceed reviewing the topmost unstarted stories (usually around 10-15, depending on how many people will be contributing to the next sprint).
+    1. If there is a clear owner for a story we assign it right away, or else it's up to anybody whishing to work on that story to assign it to himself.
+    1. During the review of unstarted stories we try also to reorder the stories based on the updated priorities (this happens frequently when we have new releases or some critical bugs emerge).
+    1. At the end of the review there may be the need to discuss further about a specific story or issue, in this case all participants that are not involved in the discussion can drop off the call.
+    1. The review and planning that happens during this call is not set in stone, during the following days we may reprioritize or add stories if some critical issue comes up or if we find out that some planned story can't be worked on due to a blocker. 
+    
 
 ### Video Calls
 
