@@ -128,3 +128,9 @@ since history has been rewritten by rebasing.
 1. If you feel the bug is critical, move the story to the _Backlog_ and (possibly) assign it to yourself.
 1. When a fix gets released, go to Instabug and reply to the user that opened the bug telling him a fix is coming soon, mention the iOS/Android release version that is expected to fix the issue.
 1. When the story gets accepted, mark the Instabug issue as closed.
+
+### Templates
+
+When you need to create a new project repository, use a [repository template](https://github.blog/2019-06-06-generate-new-repositories-with-repository-templates/). Here are the available templates:
+
+* [io-template-typescript](https://github.com/teamdigitale/io-template-typescript): For nodejs/Typescript projects
