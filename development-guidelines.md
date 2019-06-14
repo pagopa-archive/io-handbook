@@ -9,8 +9,14 @@
 1. We're not for the 100% coverage religion but you should write tests for the core of your app or usually for the part that is more fragile to changes.
 1. Use the OpenAPI standard to defining REST APIs exposed to clients. Follow [Zalando Guidelines](http://zalando.github.io/restful-api-guidelines/) when designing your APIs.
 
+### NodeJS
+
+* Use [nodenv](https://github.com/nodenv/nodenv) for setting per-project version of `node`.
+* Use [yarn](https://yarnpkg.com/) for package management
+
 ### TypeScript
 
+* When creating a new repository, use the [io-template-typescript](https://github.com/teamdigitale/io-template-typescript) template - the template is also usefus as reference for our tooling and repository structure.
 * Always use [structured types](https://github.com/gcanti/io-ts): do not pass in input to unstructured data functions (eg `JSON` or `request.Express`)
 * Use [tagged types](https://blog.mariusschulz.com/2016/11/03/typescript-2-0-tagged-union-types) and [algebraic types](https://stackoverflow.com/questions/33915459/algebraic-data-types-in-typescript) instead of classes
 * Use [discriminated unions](http://www.typescriptlang.org/docs/handbook/advanced-types.html#discriminated-unions) instead of inheritance
@@ -26,7 +32,7 @@
 * Use [fp-ts](https://github.com/gcanti/fp-ts) for functional data structures (i.e. `Option`, `Either`, `NonEmptyArray`, etc...)
 * Use [italia-utils](https://github.com/teamdigitale/italia-utils) for generating `io-ts` models from OpenAPI specs.
 
-### Editors and Code Formatting
+### Editors, Code Formatting, Linting
 
 You are free to use any code editor or IDE you like.
 
