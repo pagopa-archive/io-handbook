@@ -40,8 +40,8 @@ We're a distributed, remote-first team where people are allowed and encouraged t
 1. Feel free to send a colleague a link to these guidelines if the communication in Slack should be done asynchronously.
 1. If you are having a hard time keeping up with messages, you can update your preferences to have Slack email you all notifications. To change the setting, go to `Preferences > Notifications > When I'm not active on desktop...` and `send me email notifications`.
 1. **Please avoid using @here or @channel unless this is about something urgent and important.** In chat try to keep the use of keywords that mention the whole channel to a minimum. They should only be used for pings that are both urgent and important, not just important. By overusing channel mentions you make it harder to respond to personal mentions in a timely manner since people get pinged too frequently. If something is urgent and important:
-  * Use `@here` to notify all currently active members in the room. Please only use `@here` if the message is important and urgent.
-  * Use `@channel` to notify ALL members in the room, irrespective of away status. Please only use `@here` if the message is important and urgent.
+    1. Use `@here` to notify all currently active members in the room. Please only use `@here` if the message is important and urgent.
+    1. Use `@channel` to notify ALL members in the room, irrespective of away status.
 1. If something is important but not urgent - like complimenting or encouraging the entire team - use email or post in the channel without @-mentioning the team.
 1. If you agree in a message to start a video call (typically by asking "Call?") the person that didn't leave the last comment starts the call. So either respond to the "Call?" request with a video link or say "Yes" and let the other person start it. Don't say "Yes" and start a call 5 seconds later since it is likely you'll both be creating a video call link at the same time.
 1. The usage of ChatBots for integrations can sometimes depend upon the name of the channel. You should consult the channel about such integrations before changing the name of commonly used / popular channels in order to avoid inadvertently breaking integrations.
@@ -92,13 +92,13 @@ The IO team hangs out in the following channels:
 
 1. Use video calls if you find yourself going back and forth in an issue/via email or over chat. Rule of thumb: if you have gone **back and forth 3 times**, it's time for a video call.
 1. Sometimes it's better to not have a video call. Consider these tradeoffs:
-  1. It is difficult (or impossible) to multi-task in a video call.
-  1. It may be more efficient to have an async conversation in an issue, depending on the topic.
-  1. A video call is limited in time: A conversation in an issue can start or stop at any time, whenever there's interest. It is async.
-  1. A video call is limited in people: You can invite anybody into an async conversation at any time in an issue. You don't have to know who are the relevant parties ahead of time. Everyone can contribute at any time. A video call is limited to invited attendees (and those who have accepted).
-  1. You can easily "promote" an async conversation from an issue to a video call, as needed. The reverse is harder. So there is lower risk to start with an async conversation.
-  1. For a newcomer to the conversation, it's easier and more efficient to parse an issue, than to read a video transcript or watch it.
-  1. Conversations in issues and stories are easily searchable. Video calls are not.
+    1. It is difficult (or impossible) to multi-task in a video call.
+    1. It may be more efficient to have an async conversation in an issue, depending on the topic.
+    1. A video call is limited in time: A conversation in an issue can start or stop at any time, whenever there's interest. It is async.
+    1. A video call is limited in people: You can invite anybody into an async conversation at any time in an issue. You don't have to know who are the relevant parties ahead of time. Everyone can contribute at any time. A video call is limited to invited attendees (and those who have accepted).
+    1. You can easily "promote" an async conversation from an issue to a video call, as needed. The reverse is harder. So there is lower risk to start with an async conversation.
+    1. For a newcomer to the conversation, it's easier and more efficient to parse an issue, than to read a video transcript or watch it.
+    1. Conversations in issues and stories are easily searchable. Video calls are not.
 1. Having pets, children, significant others, friends, and family visible during video chats is encouraged. If they are human, ask them to wave at your remote team member to say "Hi".
 1. We prefer Google Hangout.
 1. For meetings that are scheduled via calendar there is automatically a Google Hangouts URL added. This is the meeting place. Having a URL in advance is much more reliable than trying to call via Hangouts as the meeting start.
