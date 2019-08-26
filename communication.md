@@ -14,11 +14,11 @@ We're a distributed, remote-first team where people are allowed and encouraged t
 1. All project data should be **shareable** by default. Don't use a local text file but rather leave comments on a story or in a shared Google doc.
 1. It is OK to bring an issue to someone's attention with a CC ("cc @user"), but CCs alone are not enough if specific action is needed from someone. The mentioned user may read the issue and take no further action. If you need something, please explicitly communicate your need along with @ mentioning who you need it from.
 1. Avoid creating private groups for internal discussions:
-  1. It's disturbing (all user in the group get notified for each message).
-  1. It's not searchable.
-  1. It's not shareable: there is no way to add people in the group (and this often leads to multiple groups creation).
-  1. They don't have a subject, so everyone has to remember the topic of each private group based on the participants, or open the group again to read the content.
-  1. History is lost when leaving the group.
+    1. It's disturbing (all user in the group get notified for each message).
+    1. It's not searchable.
+    1. It's not shareable: there is no way to add people in the group (and this often leads to multiple groups creation).
+    1. They don't have a subject, so everyone has to remember the topic of each private group based on the participants, or open the group again to read the content.
+    1. History is lost when leaving the group.
 1. Use [low-context communications](https://en.wikipedia.org/wiki/High-context_and_low-context_cultures) by being explicit in your communications. We are a remote-first team. Provide as much context as possible to avoid confusion.
 
 ### Email
