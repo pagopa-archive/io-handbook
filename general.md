@@ -1,6 +1,6 @@
 ## 🌍 GENERAL GUIDELINES
 
-1. Working in the IO team is cooperating with the most talented people you've ever worked with, being the most productive you'll ever be, learning the most awesome things you’ve ever learned and creating software that is helping the most people you've ever reached.
+1. Working in the IO team is cooperating probably with the most talented people you've ever worked with, being the most productive you'll ever be, learning the most awesome things you’ve ever learned and creating software that is helping the most people you've ever reached.
 1. We recognize that inspiration is perishable, so if you’re enthusiastic about something that generates great results in relatively little time feel free to make a proposal and work on that.
 1. Do what is right for our users and customers, do what is best over the long term, don't be evil.
 1. Share problems you run into, ask for help, be forthcoming with information and speak up.
