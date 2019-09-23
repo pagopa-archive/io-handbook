@@ -6,7 +6,7 @@
 1. Share problems you run into, ask for help, be forthcoming with information and speak up.
 1. Don't display surprise when people say they don't know something, as it is important that everyone feels comfortable saying "I don't know" and "I don't understand."
 1. If you think some piece of information could be valuable, write it down and share it.
-1. Work out in the open, try to write shared Google documents (or github docs) instead of keeping your ideas in your head or on your computer.
+1. Work out in the open, try to write shared Google documents (or GitHub docs) instead of keeping your ideas in your head or on your computer.
 1. Most things are shared with everybody unless there is a reason not to, not public by default are: financial information, legal, job applications/compensation/feedback and partnerships with other companies.
 1. Share solutions you find and answers you receive with the whole team.
 1. If you make a mistake, don't worry, correct it and proactively let the affected party and your team know what happened, how you corrected it and how, if needed, you changed the process to prevent future mistakes.
