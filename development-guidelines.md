@@ -31,6 +31,7 @@
 * Use [io-ts](https://github.com/gcanti/io-ts) to defined types that validate at compile and run-time.
 * Use [fp-ts](https://github.com/gcanti/fp-ts) for functional data structures (i.e. `Option`, `Either`, `NonEmptyArray`, etc...)
 * Use [italia-utils](https://github.com/teamdigitale/italia-utils) for generating `io-ts` models from OpenAPI specs.
+* Refer to the [React Typescript cheatsheet](https://github.com/typescript-cheatsheets/react-typescript-cheatsheet) to type React Components
 
 ### Editors, Code Formatting, Linting
 
