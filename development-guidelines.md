@@ -43,7 +43,7 @@ Examples:
 1. Whenever and wherever possible, prefer functional style over imperative and immutable data structure over mutable state.
 1. Keep each individual change small: only change the minimum amount of code needed to accomplish the purpose of your pull request (i.e. do not change the format of the code if that's not the purpose of your change).
 1. We're not for the 100% coverage religion but you should write tests for the core of your app or usually for the part that is more fragile to changes.
-1. Use the OpenAPI standard to defining REST APIs exposed to clients. Follow [Zalando Guidelines](http://zalando.github.io/restful-api-guidelines/) when designing your APIs.
+1. Use the OpenAPI standard to defining REST APIs exposed to clients. Follow the [National Guidelines](https://docs.italia.it/italia/piano-triennale-ict/lg-modellointeroperabilita-docs/it/bozza/doc/profili-di-interazione/regole-comuni-rest-soap.html#formato-dei-dati) when designing your APIs.
 
 ### NodeJS
 
