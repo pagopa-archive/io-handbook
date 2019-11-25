@@ -81,21 +81,22 @@ features stories must be:
 
 *	**Understandable**	the story or its related description must provide all the necessary information in order to be understood by everyone working on the project with minimal information about the context
 *	**Friendly** put implementation details into the story description
-*	**Independent**:	must have no inherent dependency on another story (or add the other story as a blocker)
-*	**Negotiable**: leave space for discussion
-*	**Valuable**:	deliver value to the stakeholders
-*	**Estimatable**	you must always be able to estimate the size of a story
-*	**Small**	not be so big as to become impossible to plan/task/prioritize within a level of accuracy
-*	**Testable**	the story or its related description must provide the necessary information to make test development possible
 
-see https://en.wikipedia.org/wiki/INVEST_(mnemonic)
+**Independent** (can be built separately to other stories)
+**Negotiable** (requirements can be adapted)
+**Valuable** (provides benefit to the end-user)
+**Estimable** (to reasonable accuracy)
+**Small** (can be built within one iteration)
+**Testable** (can be verified by QA)
+
+see https://medium.com/tribalscale/writing-technical-user-stories-434bf96f1dd5
 
 ##### Stories examples
 
-Bad: _Implement login screen_
+Bad: _Implement login screen_  
 Good: As an Author I want to be able to login in order to start edit the content
 
-Bad: _Create a modal to show errors_
+Bad: _Create a modal to show errors_  
 Good: _As an Editor I want to be alerted in case some error occurs in order to plan a retry_
 
 ...
