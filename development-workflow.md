@@ -82,12 +82,12 @@ features stories must be:
 *	**Understandable**	the story or its related description must provide all the necessary information in order to be understood by everyone working on the project with minimal information about the context
 *	**Friendly** put implementation details into the story description
 
-**Independent** (can be built separately to other stories)
-**Negotiable** (requirements can be adapted)
-**Valuable** (provides benefit to the end-user)
-**Estimable** (to reasonable accuracy)
-**Small** (can be built within one iteration)
-**Testable** (can be verified by QA)
+* **Independent** (can be built separately to other stories)
+* **Negotiable** (requirements can be adapted)
+* **Valuable** (provides benefit to the end-user)
+* **Estimable** (to reasonable accuracy)
+* **Small** (can be built within one iteration)
+* **Testable** (can be verified by QA)
 
 see https://medium.com/tribalscale/writing-technical-user-stories-434bf96f1dd5
 
