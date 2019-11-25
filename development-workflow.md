@@ -72,10 +72,33 @@ See the [ADRs repository](https://github.com/teamdigitale/digital-citizenship/tr
 
 ##### Story Types
 
-* **features**: stories that provide verifiable value to the user. They have a story point estimate.
+* **features**: stories that provide verifiable value to the user. They have a story point estimate. Use the form `As <type of user> I want to <some goal> so that <some reason>` for features stories.
 * **chores**: stories that are necessary but provide no direct, obvious value to the user. They don’t require extra validation when they’re finished, so the states for chores are just _unstarted_, _started_, and _accepted_.
 * **bugs**: unintended behavior that can be related to features. Bugs have the same states as _features_.
 * **releases**: milestone markers that allow your team to track progress toward concrete goals. Releases only have unstarted and accepted states.
+
+features stories must be:
+
+*	**Understandable**	the story or its related description must provide all the necessary information in order to be understood by everyone working on the project with minimal information about the context
+*	**Friendly** put implementation details into the story description
+*	**Independent**:	must have no inherent dependency on another story (or add the other story as a blocker)
+*	**Negotiable**: leave space for discussion
+*	**Valuable**:	deliver value to the stakeholders
+*	**Estimatable**	you must always be able to estimate the size of a story
+*	**Small**	not be so big as to become impossible to plan/task/prioritize within a level of accuracy
+*	**Testable**	the story or its related description must provide the necessary information to make test development possible
+
+see https://en.wikipedia.org/wiki/INVEST_(mnemonic)
+
+##### Stories examples
+
+Bad: _Implement login screen_
+Good: As an Author I want to be able to login in order to start edit the content
+
+Bad: _Create a modal to show errors_
+Good: _As an Editor I want to be alerted in case some error occurs in order to plan a retry_
+
+...
 
 ##### Story States
 
