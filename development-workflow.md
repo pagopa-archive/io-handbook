@@ -77,10 +77,12 @@ See the [ADRs repository](https://github.com/teamdigitale/digital-citizenship/tr
 * **bugs**: unintended behavior that can be related to features. Bugs have the same states as _features_.
 * **releases**: milestone markers that allow your team to track progress toward concrete goals. Releases only have unstarted and accepted states.
 
-features stories must be:
+Titles / descriptions must be:
 
 *	**Understandable**	the story or its related description must provide all the necessary information in order to be understood by everyone working on the project with minimal information about the context
 *	**Friendly** put implementation details into the story description
+
+Stories must be:
 
 * **Independent** (can be built separately to other stories)
 * **Negotiable** (requirements can be adapted)
