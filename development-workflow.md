@@ -96,10 +96,10 @@ see https://medium.com/tribalscale/writing-technical-user-stories-434bf96f1dd5
 ##### Stories examples
 
 Bad: _Implement login screen_  
-Good: As an Author I want to be able to login in order to start edit the content
+Good: _As an Author I want to be able to login in order to start edit the content_
 
 Bad: _Create a modal to show errors_  
-Good: _As an Editor I want to be alerted in case some error occurs in order to plan a retry_
+Good: _As an Editor I want to be notified in case some error occurs in order to plan a retry_
 
 ...
 
