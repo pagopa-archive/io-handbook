@@ -97,6 +97,7 @@ function printName(p: Person) {
 
 const david: Person = { name: "David", surname: "Smith", age: 20 };
 printNameMutation(david); // David Smith
+// the object has been mutated
 printName(david); // Rob Smith
 ```
 
@@ -127,7 +128,7 @@ if (user.emailPreference !== undefined && user.emailPreference === true) {
   console.log("can't send email due to the user's preference");
 }
 
-// use option
+// use option to avoid if/else
 type UserO = {
   id: number;
   emailPreference: Option<boolean>;
