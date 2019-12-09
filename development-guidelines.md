@@ -69,6 +69,105 @@ Examples:
 * Use [italia-utils](https://github.com/teamdigitale/italia-utils) for generating `io-ts` models from OpenAPI specs.
 * Refer to the [React Typescript cheatsheet](https://github.com/typescript-cheatsheets/react-typescript-cheatsheet) to type React Components
 
+### Coding: some practical examples
+
+#### avoid object modification
+
+-  Due to its dynamic nature, JavaScript makes it extremely easy to modify objects that you do not own
+-  Such practice should generally be avoided as it can lead to maintenance problems and can produce hard to find bugs
+-  If you don't own it, don't modify it
+
+side effects, example
+```typescript
+type Person = {
+    name: string;
+    surname: string;
+    age: number;
+}
+
+function printNameMutation(p: Person) {
+    console.log(`${p.name} ${p.surname}`);
+    // this object mutation could broken software logic
+    p.name = "Rob";
+}
+
+function printName(p: Person) {
+    console.log(`${p.name} ${p.surname}`);
+}
+
+const david: Person = { name: "David", surname: "Smith", age: 20 };
+printNameMutation(david); // David Smith
+printName(david); // Rob Smith
+```
+
+
+#### use [Option](https://gcanti.github.io/fp-ts/modules/Option.ts.html) 
+
+```typescript
+import { Option, some } from "fp-ts/lib/Option";
+
+// this is a common scenario where we want to model an user with email preferences
+
+// undefined -> user doesn't give any feedback
+// true -> users wants to receive email
+// false -> users doesn't want to receive email
+type EmailPreference = boolean | undefined;
+
+type User = {
+  id: number;
+  emailPreference: EmailPreference;
+};
+
+const user: User = { id: 1, emailPreference: true };
+
+// check if user wants to receive email
+if (user.emailPreference !== undefined && user.emailPreference === true) {
+  // send email
+} else {
+  console.log("can't send email due to the user's preference");
+}
+
+// use option
+type UserO = {
+  id: number;
+  emailPreference: Option<boolean>;
+};
+
+const userO: UserO = { id: 1, emailPreference: some(true) };
+// send email if user's preference is set to true
+userO.emailPreference.fold(
+  () => {
+    console.log("can't send email due to the user's preference");
+  },
+  canSendEmail => {
+    // send email
+  }
+);
+```
+
+
+#### avoid potentially inconsistent state update (React)
+Updating the state of a component based on the current value of 'this.state' or 'this.props' may lead to inconsistent component state.
+
+```typescript
+// this is a potentially inconsistent state update
+this.setState({ amount: this.state.amount + 1 });
+
+// simple solution
+// - get data from state
+// - update data
+// - set state with the updated data
+const amount = this.state.amount + 1;
+this.setState({ amount });
+
+// react solution
+// pass an updater to setState
+this.setState((prevState: State, _: Props) => {
+  return { amount: prevState.amount + 1 };
+});
+```
+
+
 ### Editors, Code Formatting, Linting
 
 You are free to use any code editor or IDE you like.
