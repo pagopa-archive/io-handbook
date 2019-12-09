@@ -148,7 +148,7 @@ userO.emailPreference.fold(
 
 
 #### avoid potentially inconsistent state update (React)
-Updating the state of a component based on the current value of 'this.state' or 'this.props' may lead to inconsistent component state.
+Updating the state of a component based on the current value of _this.state_ or _this.props_ may lead to inconsistent component state.
 
 ```typescript
 // this is a potentially inconsistent state update
