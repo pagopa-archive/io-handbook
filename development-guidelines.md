@@ -69,6 +69,10 @@ Examples:
 * Use [italia-utils](https://github.com/teamdigitale/italia-utils) for generating `io-ts` models from OpenAPI specs.
 * Refer to the [React Typescript cheatsheet](https://github.com/typescript-cheatsheets/react-typescript-cheatsheet) to type React Components
 
+### Development Style Guide
+
+* A [Style Guide](development-guidelines.md) with code snippets, common scenarios and mistakes.
+
 ### Editors, Code Formatting, Linting
 
 You are free to use any code editor or IDE you like.
