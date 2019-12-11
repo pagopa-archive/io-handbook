@@ -1,6 +1,6 @@
 ## 👨‍💻 DEVELOPMENT STYLE GUIDE
 
-A practical reason to use a style guide is that they help you write code.
+A practical reason to use a style guide is that it helps you write code.
 Furthermore, they show commons mistakes or scenario and how to handle them
 
 ### Typescript
