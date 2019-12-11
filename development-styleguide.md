@@ -22,7 +22,7 @@ type Person = {
 
 function printNameMutation(p: Person) {
   console.log(`${p.name} ${p.surname}`);
-  // this object mutation could broken software logic
+  // this object mutation could break software logic
   p.name = "Rob";
 }
 
