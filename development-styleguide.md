@@ -74,9 +74,13 @@ fromNullable(user.emailPreference).map(pref => {
 });
 ```
 
+
+
 ### REACT / REACT NATIVE
 
 #### Avoid potentially inconsistent state update (React)
+
+[How to handle state in React. The missing FAQ.](https://medium.com/react-ecosystem/how-to-handle-state-in-react-6f2d3cd73a0c)
 
 Updating the state of a component based on the current value of _this.state_ or _this.props_ may lead to inconsistent component state.
 
