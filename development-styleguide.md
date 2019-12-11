@@ -38,7 +38,7 @@ printName(david); // Rob Smith
 
 ### [FP-TS](https://gcanti.github.io/fp-ts/modules/Option.ts.html)
 
-#### [Option](https://gcanti.github.io/fp-ts/modules/Option.ts.html)
+#### Use [Options](https://github.com/gcanti/fp-ts/blob/1.12.0/src/Option.ts) to handle nullable values.
 
 ```typescript
 import { Option, some } from "fp-ts/lib/Option";
