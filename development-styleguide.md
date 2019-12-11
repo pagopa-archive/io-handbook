@@ -41,7 +41,7 @@ printName(david); // Rob Smith
 #### Use [Options](https://github.com/gcanti/fp-ts/blob/1.12.0/src/Option.ts) to handle nullable values.
 
 ```typescript
-import { Option, some } from "fp-ts/lib/Option";
+import { fromNullable, Option, some } from "fp-ts/lib/Option";
 
 // this is a common scenario where we want to model an user with email preferences
 
@@ -64,22 +64,14 @@ if (user.emailPreference !== undefined && user.emailPreference === true) {
   console.log("can't send email due to the user's preference");
 }
 
-// use option to avoid if/else
-type UserO = {
-  id: number;
-  emailPreference: Option<boolean>;
-};
-
-const userO: UserO = { id: 1, emailPreference: some(true) };
-// send email if user's preference is set to true
-userO.emailPreference.fold(
-  () => {
-    console.log("can't send email due to the user's preference");
-  },
-  canSendEmail => {
+// use option
+fromNullable(user.emailPreference).map(pref => {
+  if (pref) {
     // send email
+  } else {
+    console.log("can't send email due to the user's preference");
   }
-);
+});
 ```
 
 ### REACT / REACT NATIVE
