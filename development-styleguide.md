@@ -5,7 +5,7 @@ Furthermore, it shows commons mistakes or scenarios and how to handle them
 
 ### Typescript
 
-#### Object modification. Why you should avoid it.
+#### Avoid object modification.
 
 - Due to its dynamic nature, JavaScript makes it extremely easy to modify objects that you do not own
 - Such practice should generally be avoided as it can lead to maintenance problems and can produce hard to find bugs
