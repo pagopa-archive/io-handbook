@@ -84,9 +84,13 @@ If you want to know more about computation failure you should use Either.
 Consider this example
 
 > write a function to validate a password
+>
 > it has to be:
+>
 > length >= 8
+>
 > contain at least a char in upper case
+>
 > contain at least a number
 
 #### a possible implementaion
