@@ -74,7 +74,72 @@ fromNullable(user.emailPreference).map(pref => {
 });
 ```
 
+#### Use [Either](https://github.com/gcanti/fp-ts/blob/1.12.0/src/Either.ts) to handle success or failure.
 
+For some scenario, you may be interested why a computation failed.
+Using _Option_ is useful when you want to know if a value is present or not.
+The reason why it is not present it's not interesting.
+If you want to know more about computation failure you should use Either.
+
+Consider this example
+
+> write a function to validate a password
+it has to be:
+length >= 8
+contain at least a char in upper case
+contain at least a number
+
+#### a possible implementaion
+```typescript
+// return the error message if the password is not compliant, null otherwise
+export const validatePassword = (pwd: string): string | null => {
+  if (pwd.length < 8) {
+    return "at least 8 characters";
+  }
+  if (!/[A-Z]/g.test(pwd)) {
+    return "at least one capital letter";
+  }
+  if (!/[0-9]/g.test(pwd)) {
+    return "at least one number";
+  }
+  return null;
+};
+
+const myPws = "123456A";
+
+const validatePwd = validatePassword(myPws);
+if (myPws === null) {
+  console.log("password is ok");
+} else {
+  console.error(`the password is too weak: ${validatePwd}`);
+}
+```
+#### using Either
+```typescript
+// return the error if the password is not compliant, the password otherwise
+export const validatePassword = (pwd: string): Either<Error, string> => {
+  if (pwd.length < 8) {
+    return left(Error("at least 6 characters"));
+  }
+  if (!/[A-Z]/g.test(pwd)) {
+    return left(Error("at least one capital letter"));
+  }
+  if (!/[0-9]/g.test(pwd)) {
+    return left(Error("at least one number"));
+  }
+  return right(pwd);
+};
+const myPws = "123456A";
+const maybePassword = validatePassword(myPws);
+maybePassword.fold(
+  err => {
+    console.error(`the password is too weak: ${err.message}`);
+  },
+  pwd => {
+    console.log("password is ok");
+  }
+);
+```
 
 ### REACT / REACT NATIVE
 
