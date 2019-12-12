@@ -15,7 +15,7 @@ Furthermore, it shows commons mistakes or scenarios and how to handle them
 ```typescript
 let bob = { name : "Bob", surname: "Smith", age : 23 }
 bob.age = 24; // avoid
-// create a new object using spread operator to update only that specific field
+// create a new object using spread operator to update only specific fields
 const olderBob = { ...bob, age: 24 }
 ```
 
