@@ -11,12 +11,11 @@ Furthermore, it shows commons mistakes or scenarios and how to handle them
 - Such practice should generally be avoided as it can lead to maintenance problems and can produce hard to find bugs
 - If you don't own it, don't modify it
 
-side effects, example
 
 ```typescript
 let bob = { name : "Bob", surname: "Smith", age : 23 }
 bob.age = 24; // avoid
-// create e new object using spread operator to update that specific field
+// create a new object using spread operator to update only that specific field
 const olderBob = { ...bob, age: 24 }
 ```
 
