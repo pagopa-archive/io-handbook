@@ -14,26 +14,10 @@ Furthermore, it shows commons mistakes or scenarios and how to handle them
 side effects, example
 
 ```typescript
-type Person = {
-  name: string;
-  surname: string;
-  age: number;
-};
-
-function printNameMutation(p: Person) {
-  console.log(`${p.name} ${p.surname}`);
-  // this object mutation could break software logic
-  p.name = "Rob";
-}
-
-function printName(p: Person) {
-  console.log(`${p.name} ${p.surname}`);
-}
-
-const david: Person = { name: "David", surname: "Smith", age: 20 };
-printNameMutation(david); // David Smith
-// the object has been mutated
-printName(david); // Rob Smith
+let bob = { name : "Bob", surname: "Smith", age : 23 }
+bob.age = 24; // avoid
+// create e new object using spread operator to update that specific field
+const olderBob = { ...bob, age: 24 }
 ```
 
 ### [FP-TS](https://gcanti.github.io/fp-ts/modules/Option.ts.html)
