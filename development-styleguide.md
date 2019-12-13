@@ -128,6 +128,53 @@ maybePassword.fold(
 );
 ```
 
+### [ITALIA-TS-COMMONS](https://github.com/teamdigitale/io-ts-commons)
+
+#### Use [Pot](https://github.com/teamdigitale/io-ts-commons/blob/master/src/pot.ts) to handle the states of remote (potential) data.
+
+Usually an application could deal with loading some data, from remote or local sources.
+Pot (for potential) is a data type that helps you to keep track of states, value and errors.
+This example shows a reducer that handles the loading of a remote user
+
+```typescript
+type User = {
+  name: string;
+  username: string;
+};
+
+type UserState = {
+  currentUser: pot.Pot<User, Error>;
+};
+
+function userReducer(
+  state: UserState = { currentUser: pot.none },
+  action: Action
+): UserState {
+  switch (action.type) {
+    case getType(contentServiceLoad.request):
+      return {
+        ...state,
+         // a loading is requested, set the pot to none value
+        currentUser: pot.noneLoading
+      };
+    case getType(contentServiceLoad.success):
+      return {
+        ...state,
+         // the loading is completde, set the pot with the retrieved value
+        currentUser: pot.some(action.payload)
+      };
+
+    case getType(contentServiceLoad.failure):
+      return {
+        ...state,
+         // some errors occured, set the pot to error by setting the error (action.payload) 
+         // and keep the current state value (eventually we can access the previous value)
+        currentUser: pot.toError(state.currentUser, action.payload)
+      };
+  }
+}
+```
+
 ### REACT / REACT NATIVE
 
 #### Avoid potentially inconsistent state update (React)
