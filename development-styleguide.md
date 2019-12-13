@@ -154,13 +154,13 @@ function userReducer(
     case getType(contentServiceLoad.request):
       return {
         ...state,
-         // a loading is requested, set the pot to none value
+         // a loading is requested, set the pot in loading with none value
         currentUser: pot.noneLoading
       };
     case getType(contentServiceLoad.success):
       return {
         ...state,
-         // the loading is completde, set the pot with the retrieved value
+         // the loading is completed, set the pot to some with the retrieved value
         currentUser: pot.some(action.payload)
       };
 
