@@ -59,15 +59,15 @@ fromNullable(user.emailPreference).map(pref => {
 
 #### Use [Either](https://github.com/gcanti/fp-ts/blob/1.12.0/src/Either.ts) to handle success or failure.
 
-// For some scenario you should be interested why a computation failed
-// Using Option is usefull when you want know if a value is present or not.
-// The reason why it is not present it's not interesting
-// If you want to know more about computation failure you should use Either
+For some scenario you should be interested why a computation failed
+Using Option is usefull when you want know if a value is present or not.
+The reason why it is not present it's not interesting
+If you want to know more about computation failure you should use Either
 
-// Consider this example
+Consider this example
 
-// write a function to validate a string
-// it has to be greater than 8 chars
+write a function to validate a string
+it has to be greater than 8 chars
 
 #### a possible implementaion
 ```typescript
