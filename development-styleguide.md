@@ -109,7 +109,7 @@ validatedStringEither.fold(
 );
 ```
 if your validation function could raise multiple errors
-you should use [Validation][https://dev.to/gcanti/getting-started-with-fp-ts-either-vs-validation-5eja] to collect them
+you should use [Validation](https://dev.to/gcanti/getting-started-with-fp-ts-either-vs-validation-5eja) to collect them
 
 ### [ITALIA-TS-COMMONS](https://github.com/teamdigitale/io-ts-commons)
 
