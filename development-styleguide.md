@@ -101,7 +101,7 @@ const validatedStringEither = validateStringEither(myString);
 
 validatedStringEither.fold(
   err => {
-    console.error(`the password is too weak: ${err.message}`);
+    console.error(err);
   },
   value => {
     // do stuffs with the validated string
