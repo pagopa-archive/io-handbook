@@ -59,74 +59,58 @@ fromNullable(user.emailPreference).map(pref => {
 
 #### Use [Either](https://github.com/gcanti/fp-ts/blob/1.12.0/src/Either.ts) to handle success or failure.
 
-For some scenario, you may be interested why a computation failed.
-Using _Option_ is useful when you want to know if a value is present or not.
-The reason why it is not present it's not interesting.
-If you want to know more about computation failure you should use Either.
+// For some scenario you should be interested why a computation failed
+// Using Option is usefull when you want know if a value is present or not.
+// The reason why it is not present it's not interesting
+// If you want to know more about computation failure you should use Either
 
-Consider this example
+// Consider this example
 
-> write a function to validate a password
->
-> it has to be:
->
-> length >= 8
->
-> contain at least a char in upper case
->
-> contain at least a number
+// write a function to validate a string
+// it has to be greater than 8 chars
 
 #### a possible implementaion
 ```typescript
-// return the error message if the password is not compliant, null otherwise
-export const validatePassword = (pwd: string): string | null => {
-  if (pwd.length < 8) {
-    return "at least 8 characters";
+// throw an error if the value is not compliant
+export const validateString = (value: string): string => {
+  if (value.length < 8) {
+    throw new Error("the string it too short");
   }
-  if (!/[A-Z]/g.test(pwd)) {
-    return "at least one capital letter";
-  }
-  if (!/[0-9]/g.test(pwd)) {
-    return "at least one number";
-  }
-  return null;
+  return value;
 };
 
-const myPws = "123456A";
+const myString = "123456A";
 
-const validatePwd = validatePassword(myPws);
-if (myPws === null) {
-  console.log("password is ok");
-} else {
-  console.error(`the password is too weak: ${validatePwd}`);
+try {
+  const validatedString = validateString(myString);
+  // do stuffs with the validated string
+} catch (err) {
+  //ops something goes wrong
+  console.error(err);
 }
 ```
 #### using Either
 ```typescript
-// return the error if the password is not compliant, the password otherwise
-export const validatePassword = (pwd: string): Either<Error, string> => {
-  if (pwd.length < 8) {
+export const validateStringEither = (value: string): Either<Error, string> => {
+  if (value.length < 8) {
     return left(Error("at least 6 characters"));
   }
-  if (!/[A-Z]/g.test(pwd)) {
-    return left(Error("at least one capital letter"));
-  }
-  if (!/[0-9]/g.test(pwd)) {
-    return left(Error("at least one number"));
-  }
-  return right(pwd);
+  return right(value);
 };
-const myPws = "123456A";
-const maybePassword = validatePassword(myPws);
-maybePassword.fold(
+
+const validatedStringEither = validateStringEither(myString);
+
+validatedStringEither.fold(
   err => {
     console.error(`the password is too weak: ${err.message}`);
   },
-  pwd => {
-    console.log("password is ok");
+  value => {
+    // do stuffs with the validated string
   }
 );
 ```
+if your validation function could raise multiple errors
+you should use [Validation][https://dev.to/gcanti/getting-started-with-fp-ts-either-vs-validation-5eja] to collect them
 
 ### [ITALIA-TS-COMMONS](https://github.com/teamdigitale/io-ts-commons)
 
