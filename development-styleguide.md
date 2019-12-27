@@ -64,12 +64,11 @@ Using Option is usefull when you want know if a value is present or not.
 The reason why it is not present it's not interesting
 If you want to know more about computation failure you should use Either
 
-Consider this example
-
+Consider this example:
 write a function to validate a string
 it has to be greater than 8 chars
 
-#### a possible implementaion
+#### a possible implementation
 ```typescript
 // throw an error if the value is not compliant
 export const validateString = (value: string): string => {
@@ -85,7 +84,7 @@ try {
   const validatedString = validateString(myString);
   // do stuffs with the validated string
 } catch (err) {
-  //ops something goes wrong
+  //ops, something has gone wrong
   console.error(err);
 }
 ```
