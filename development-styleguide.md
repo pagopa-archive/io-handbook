@@ -92,7 +92,7 @@ try {
 ```typescript
 export const validateStringEither = (value: string): Either<Error, string> => {
   if (value.length < 8) {
-    return left(Error("at least 6 characters"));
+    return left(Error("the string it too short"));
   }
   return right(value);
 };
