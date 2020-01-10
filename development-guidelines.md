@@ -71,7 +71,7 @@ Examples:
 
 ### Development Style Guide
 
-* A [Style Guide](development-guidelines.md) with code snippets, common scenarios and mistakes.
+* A [Style Guide](development-styleguide.md) with code snippets, common scenarios and mistakes.
 
 ### Editors, Code Formatting, Linting
 
