@@ -6,21 +6,19 @@ Below you'll find a list of the major groups within the team. They're listed in 
 
 ### Software Engineering and Infrastructure
 
-1. **Federico Feroldi** (Team per la Trasformazione Digitale): CTO and project management.
-1. Matteo Boschi (Team per la Trasformazione Digitale): mobile app development
-1. Luca Morelli (Wellnet): mobile app and backend development
-1. Francesco Persico (Wellnet): mobile app development
-1. Danilo Spinelli (AgID): frontend, backend and infrastructure development
-1. Francesco Zaia (Team per la Trasformazione Digitale): frontend development
+1. **Federico Feroldi** (PagoPA): CTO and project management.
+1. Matteo Boschi (PagoPA): mobile app development
+1. Francesco Persico (PagoPA): mobile app development
+1. Danilo Spinelli (PagoPA): frontend, backend and infrastructure development
 
 ### Product Management
 
-1. **Matteo De Santi** (Team per la Trasformazione Digitale): product strategy and UX
+1. **Matteo De Santi** (PagoPA): product strategy and UX
 
 ### Program Management
 
-1. **Matteo De Santi** (Team per la Trasformazione Digitale): institutional relations
-1. **Giuseppe Virgone** (Team per la Trasformazione Digitale): strategy, institutional relations
+1. **Matteo De Santi** (PagoPA): institutional relations
+1. **Giuseppe Virgone** (PagoPA): strategy, institutional relations
 1. Roberta Tassi (Team per la Trasformazione Digitale): customer success
 
 
