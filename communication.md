@@ -94,8 +94,8 @@ The IO team hangs out in the following channels:
 1. Sometimes it's better to not have a video call. Consider these tradeoffs:
     1. It is difficult (or impossible) to multi-task in a video call.
     1. It may be more efficient to have an async conversation in an issue, depending on the topic.
-    1. A video call is limited in time: A conversation in an issue can start or stop at any time, whenever there's interest. It is async.
-    1. A video call is limited in people: You can invite anybody into an async conversation at any time in an issue. You don't have to know who are the relevant parties ahead of time. Everyone can contribute at any time. A video call is limited to invited attendees (and those who have accepted).
+    1. A video call is limited in time: a conversation in an issue can start or stop at any time, whenever there's interest. It is async.
+    1. A video call is limited in people: you can invite anybody into an async conversation at any time in an issue. You don't have to know who are the relevant parties ahead of time. Everyone can contribute at any time. A video call is limited to invited attendees (and those who have accepted).
     1. You can easily "promote" an async conversation from an issue to a video call, as needed. The reverse is harder. So there is lower risk to start with an async conversation.
     1. For a newcomer to the conversation, it's easier and more efficient to parse an issue, than to read a video transcript or watch it.
     1. Conversations in issues and stories are easily searchable. Video calls are not.

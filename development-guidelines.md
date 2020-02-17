@@ -1,5 +1,41 @@
 ## 👷🏻 DEVELOPMENT GUIDELINES
 
+### Principles
+
+1. **Failure is a mandatory component of success**. As people, learning and failure go hand in hand.
+
+1. **Learn and adapt from prior learnings**. Adopt the learnings of continuous improvement: when failure occurs, immediately determine what needs to be done to prevent recurrence and focus on those tasks (e.g. [Kaizen](https://en.wikipedia.org/wiki/Kaizen) and [Antifragile](https://en.wikipedia.org/wiki/Antifragile)).
+
+1. **Focus on software and architecture that continually reduces the risk of changes.** These practices focus on:
+
+    1. *isolation* - truly ensuring that one change cannot impact another. For example, our focus on API design and micro service architecture on the backend is one technique we use to create isolation.
+
+    1. *continuous delivery* - by releasing small changes continuously to our production environment, we minimize the impact of any one change and significantly decrease time to resolution.
+
+    1. *automation*  - by writing software to manage and implement our processes - including testing, patching and deployment - we focus on capturing our assumptions during the development process and building leverage to ensure our assumptions remain valid over time.
+
+    1. *rollback* - by ensuring that every application change can be rolled back, we enable faster resolution when problems arise. For example, our practice of managing database schema changes independently of application changes provides the means to ensure every application change can itself be rolled back.
+
+    1. *incremental rollout* - by rolling out application changes to production incrementally, and verifying that they work, we minimize the impact of a problem before it affects all of our users.
+
+    1. *monitoring and alerting* - by instrumenting our applications - via logging and external monitoring services - we can capture our assumptions and receive notification on variance to minimize customer impact.
+
+    1. *secure by design* - We consider security throughout the entire software development life cycle. For example, we deny access by default: That is, something must be true in order for authorization to be granted.
+
+### The Open Source Way
+
+We are strong proponents of open source software, including the overall process of developing open source software. The Open Source Way is a framework we use to help us answer many questions about software design, deferring to how the open source community works.
+
+Examples:
+
+  * *How much documentation should we write?*
+
+    Let's look at our favorite open source projects and see how their documentation looks. One example we like is the [react project](https://facebook.github.io/react/)
+
+  * *What type of API should we build?*
+
+    Let's look at our favorite open source projects and look at their APIs. One example we like is [Stripe](https://stripe.com/docs/api)
+
 ### General Guidelines
 
 1. All the code is open source and published on GitHub.
@@ -31,6 +67,11 @@
 * Use [io-ts](https://github.com/gcanti/io-ts) to defined types that validate at compile and run-time.
 * Use [fp-ts](https://github.com/gcanti/fp-ts) for functional data structures (i.e. `Option`, `Either`, `NonEmptyArray`, etc...)
 * Use [italia-utils](https://github.com/teamdigitale/italia-utils) for generating `io-ts` models from OpenAPI specs.
+* Refer to the [React Typescript cheatsheet](https://github.com/typescript-cheatsheets/react-typescript-cheatsheet) to type React Components
+
+### Development Style Guide
+
+* A [Style Guide](development-styleguide.md) with code snippets, common scenarios and mistakes.
 
 ### Editors, Code Formatting, Linting
 
