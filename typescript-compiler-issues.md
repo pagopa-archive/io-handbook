@@ -1,13 +1,13 @@
 # Typescript compiler issues
 
-It sometimes happens that the Typescript server or compiler hang during build phase (`tsc`).
+It sometimes happens that the Typescript server or compiler hangs during build phase (`tsc`).
 
 This is most likely due to the fact that you're importing two different versions of
 the same package. We've noticed that this often happens because of some
 different transitive dependencies on `fp-ts` or `io-ts` packages.
 
 To list which version you are currently importing though your
-package.json / yarn.lock file:
+package.json / yarn.lock file run:
 
 ```sh
 yarn why io-ts
