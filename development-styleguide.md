@@ -11,12 +11,55 @@ Furthermore, it shows commons mistakes or scenarios and how to handle them
 - Such practice should generally be avoided as it can lead to maintenance problems and can produce hard to find bugs
 - If you don't own it, don't modify it
 
-
 ```typescript
-let bob = { name : "Bob", surname: "Smith", age : 23 }
+let bob = { name: "Bob", surname: "Smith", age: 23 };
 bob.age = 24; // avoid
 // create a new object using spread operator to update only specific fields
-const olderBob = { ...bob, age: 24 }
+const olderBob = { ...bob, age: 24 };
+```
+
+#### Avoid hiding exceptions
+
+Usually in Javascript and Typescript is hard to figure out if a function throws an exception. Try to be explicit about the exceptions you throw.
+
+```typescript
+//
+// ✅good: exception is thrown explicitly
+//
+
+const config = (key: string): Option<string> => (
+  fromNullable(process.env[key])
+);
+
+const callService () => {
+  const token: string = config("token").getOrElseL(() => {
+    throw new Error("Must provide a token!");
+  });
+  const url: string = config("url").getOrElseL(() => {
+    throw new Error("Must provide a url!");
+  });
+
+  // do stuff here ...
+};
+
+
+//
+// ❌bad: exception is hidden inside the "config" function
+//
+
+const config = (key: string): string => {
+  const value = process.env[key];
+  if(!value) throw new Error(`Must provide a value for key ${key}!`);
+  return value;
+};
+
+const callService () => {
+  const token: string = config("token");
+  const url: string = config("url");
+
+  // do stuff here ...
+};
+
 ```
 
 ### [FP-TS](https://gcanti.github.io/fp-ts/modules/Option.ts.html)
@@ -69,6 +112,7 @@ write a function to validate a string
 it has to be greater than 8 chars
 
 #### a possible implementation
+
 ```typescript
 // throw an error if the value is not compliant
 export const validateString = (value: string): string => {
@@ -88,7 +132,9 @@ try {
   console.error(err);
 }
 ```
+
 #### using Either
+
 ```typescript
 export const validateStringEither = (value: string): Either<Error, string> => {
   if (value.length < 8) {
@@ -108,8 +154,43 @@ validatedStringEither.fold(
   }
 );
 ```
+
 if your validation function could raise multiple errors
-you should use [Validation](https://dev.to/gcanti/getting-started-with-fp-ts-either-vs-validation-5eja) to collect them
+you should use [Validation](https://dev.to/gcanti/getting-started-with-fp-ts-either-vs-validation-5eja) to collect them.
+
+#### Avoid the use of imperative methods like `isLeft` and `isNone`.
+
+When possible avoid to use `isNone` / `isLeft` checks that makes code verbose (and more imperative). Use functional construct from [`fp-ts`](https://gcanti.github.io/fp-ts/modules/Option.ts.html) types instead (fold, map, mapLeft, bimap, getOrElse, ...).
+
+```typescript
+//
+// ✅good: use of fp-ts's algebric constructs
+//
+
+// with Option
+const name: string = fromNullable(user.name).getOrElseL(() => {
+  throw new Error("name required!");
+});
+
+// with Either
+const validString: string = validatedStringEither.fold(
+  err => {
+    throw new Error("invalid string!");
+  },
+  value => value
+);
+
+//
+// ❌bad: imperative code
+//
+
+// with Option
+const nameOption = fromNullable(user.name);
+if (isNone(nameOption)) throw new Error("name required!");
+
+// with Either
+if (isLeft(validatedStringEither)) throw new Error("invalid string!");
+```
 
 ### [ITALIA-TS-COMMONS](https://github.com/teamdigitale/io-ts-commons)
 
@@ -137,21 +218,21 @@ function userReducer(
     case getType(contentServiceLoad.request):
       return {
         ...state,
-         // a loading is requested, set the pot in loading with none value
+        // a loading is requested, set the pot in loading with none value
         currentUser: pot.noneLoading
       };
     case getType(contentServiceLoad.success):
       return {
         ...state,
-         // the loading is completed, set the pot to some with the retrieved value
+        // the loading is completed, set the pot to some with the retrieved value
         currentUser: pot.some(action.payload)
       };
 
     case getType(contentServiceLoad.failure):
       return {
         ...state,
-         // some errors occured, set the pot to error by setting the error (action.payload) 
-         // and keep the current state value (eventually we can access the previous value)
+        // some errors occured, set the pot to error by setting the error (action.payload)
+        // and keep the current state value (eventually we can access the previous value)
         currentUser: pot.toError(state.currentUser, action.payload)
       };
   }
@@ -181,5 +262,97 @@ this.setState({ amount });
 // pass an updater to setState
 this.setState((prevState: State, _: Props) => {
   return { amount: prevState.amount + 1 };
+});
+```
+
+### TESTING
+
+#### Prefer test titles in the form _"it should ..."_
+
+```typescript
+// ✅good
+it("should have `name` property", () => { ... });
+
+// ❌bad: test title must be in "should" form
+it("has `name` property", () => { ... });
+
+// ❌bad: use "it" instead of "test"
+test("should have `name` property", () => { ... });
+```
+
+#### Avoid throw exceptions
+
+Sometimes test code can have unhappy branches you don't want to test and hence consider as a test failure. Try not to throw exception in there.
+If you are using `Jest`, you can use [`expect.assertions`](https://jest-bot.github.io/jest/docs/expect.html#expectassertionsnumber)
+
+```typescript
+// ✅good
+expect.assertions(1);
+myDeconder.fold(
+  () => {},
+  (value) => {
+    expect(value).toEqual( ... );
+  }
+);
+
+// ❌bad
+myDeconder.fold(
+  () => {
+    throw new Error("test should not pass here");
+  },
+  (value) => {
+    expect(value).toEqual( ... );
+  }
+);
+
+```
+
+#### Avoid wrapping tests with helper functions
+
+Be explicit in the test you are executing. If you are repeating te same test in many places, don't be tempted to wrap common tests into helpers. We encourage code duplication in favor of more explicit code.
+
+```typescript
+//
+// ✅good: each suite has its own test explicitly declared
+//
+
+// sum.test.ts
+describe("Sum", () => {
+  it("should be 6", () => {
+    expect(2 + 4).toBe(6);
+  });
+});
+
+// prod.test.ts
+describe("Prod", () => {
+  it("should be 8", () => {
+    expect(2 * 4).toBe(8);
+  });
+});
+
+
+//
+// ❌bad: "it" calls are hidden inside an helper function
+//
+
+// helpers.ts
+export const testValue = (title, value, expected) => (
+  it(title, () => {
+    expect(value).toBe( ... );
+  });
+)
+
+// sum.test.ts
+import { testValue } from "./helpers.ts";
+
+describe("Sum", () => {
+  testValue("should be 6", 2 + 4, 6);
+});
+
+// prod.test.ts
+import { testValue } from "./helpers.ts";
+
+describe("Prod", () => {+
+  testValue("should be 8", 2 * 4, 8);
 });
 ```
