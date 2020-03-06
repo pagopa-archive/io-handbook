@@ -20,11 +20,30 @@ const olderBob = { ...bob, age: 24 };
 
 #### Avoid hiding exceptions
 
-Usually in Javascript and Typescript is hard to figure out whether a function throws an exception or not. Try to be explicit about the exceptions you throw.
+Usually in Javascript and Typescript is hard to figure out whether a function throws an exception or not.
+Try not to use exceptions at all, you can use eithers instead in 99% of cases. Exceptions must be limited to the scope of the main() method in case you need to early exit the process with an error message.
+If you need to throw an exception, try to be explicit at least.
 
 ```typescript
 //
-// ✅good: exception is thrown explicitly
+// ✅good: no exception is thrown
+//
+
+const config = (key: string): Option<string> => (
+  fromNullable(process.env[key])
+);
+
+const callService () => {
+  sequenceS(option)({
+    token: config("token"),
+    url: config("url")
+  }).map(({ toke, url }) => {
+    // do stuff here ...
+  })
+};
+
+//
+// ✅good: exception is thrown explicitly at least
 //
 
 const config = (key: string): Option<string> => (
