@@ -20,7 +20,7 @@ const olderBob = { ...bob, age: 24 };
 
 #### Avoid hiding exceptions
 
-Usually in Javascript and Typescript is hard to figure out if a function throws an exception. Try to be explicit about the exceptions you throw.
+Usually in Javascript and Typescript is hard to figure out whether a function throws an exception or not. Try to be explicit about the exceptions you throw.
 
 ```typescript
 //
