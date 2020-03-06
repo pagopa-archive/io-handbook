@@ -188,13 +188,13 @@ When possible avoid to use `isNone` / `isLeft` checks that makes code verbose (a
 
 // with Option
 const name: string = fromNullable(user.name).getOrElseL(() => {
-  throw new Error("name required!");
+  // handle none here
 });
 
 // with Either
 const validString: string = validatedStringEither.fold(
   err => {
-    throw new Error("invalid string!");
+    // handle left here
   },
   value => value
 );
@@ -205,10 +205,14 @@ const validString: string = validatedStringEither.fold(
 
 // with Option
 const nameOption = fromNullable(user.name);
-if (isNone(nameOption)) throw new Error("name required!");
+if (isNone(nameOption)) {
+  // handle none here
+}
 
 // with Either
-if (isLeft(validatedStringEither)) throw new Error("invalid string!");
+if (isLeft(validatedStringEither)) {
+  // handle left here
+}
 ```
 
 ### [ITALIA-TS-COMMONS](https://github.com/teamdigitale/io-ts-commons)
@@ -286,7 +290,7 @@ this.setState((prevState: State, _: Props) => {
 
 ### TESTING
 
-#### Prefer test titles in the form _"it should ..."_
+#### Test titles must be in the form _"it should ..."_
 
 ```typescript
 // ✅good
