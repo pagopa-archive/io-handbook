@@ -309,7 +309,7 @@ myDecoder.fold(
 
 #### Avoid wrapping tests with helper functions
 
-Be explicit in the test you are executing. If you are repeating te same test in many places, don't be tempted to wrap common tests into helpers. We encourage code duplication in favor of more explicit code.
+Be explicit in the test you are executing. If you are repeating te same test in many places, don't be tempted to wrap common tests into helpers. We encourage code duplication in favor of more explicit logic.
 
 ```typescript
 //
