@@ -283,12 +283,12 @@ test("should have `name` property", () => { ... });
 #### Avoid throw exceptions
 
 Sometimes test code can have unhappy branches you don't want to test and hence consider as a test failure. Try not to throw exception in there.
-If you are using `Jest`, you can use [`expect.assertions`](https://jest-bot.github.io/jest/docs/expect.html#expectassertionsnumber)
+If you are using `Jest`, you can use [`expect.assertions`](https://jest-bot.github.io/jest/docs/expect.html#expectassertionsnumber).
 
 ```typescript
 // ✅good
 expect.assertions(1);
-myDeconder.fold(
+myDecoder.fold(
   () => {},
   (value) => {
     expect(value).toEqual( ... );
@@ -296,7 +296,7 @@ myDeconder.fold(
 );
 
 // ❌bad
-myDeconder.fold(
+myDecoder.fold(
   () => {
     throw new Error("test should not pass here");
   },
