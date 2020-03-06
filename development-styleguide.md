@@ -280,7 +280,7 @@ it("has `name` property", () => { ... });
 test("should have `name` property", () => { ... });
 ```
 
-#### Avoid throw exceptions
+#### Avoid throwing exceptions
 
 Sometimes test code can have unhappy branches you don't want to test and hence consider as a test failure. Try not to throw exception in there.
 If you are using `Jest`, you can use [`expect.assertions`](https://jest-bot.github.io/jest/docs/expect.html#expectassertionsnumber).
