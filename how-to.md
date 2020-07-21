@@ -10,7 +10,8 @@
   1. Discussing changes is easier if you can read what the current process is.
   1. Communicating change is easier if you can just point to a diff.
 1. Everyone can contribute to it by proposing a change in the `#io-handbook` channel on Slack.
-1. Documenting things in the handbook takes more time initially and it requires thinking. But it saves time over a longer period and it is essential to scale and adapt our organization. It is not unlike writing tests for your software. 1. Please follow these guidelines and remind others of them.
+1. Documenting things in the handbook takes more time initially and it requires thinking. But it saves time over a longer period and it is essential to scale and adapt our organization. It is not unlike writing tests for your software. 
+1. Please follow these guidelines and remind others of them.
 1. If you need to discuss with a team member for help please realize that probably the majority of the community also doesn't know, be sure to document the answer to radiate this information to the whole team. After the question is answered discuss where it should be documented and who will do it. You can remind other people of this by asking 'who will document this'?
 1. When you discuss something in chat always try to link to a URL where relevant, for example the documentation you have a question about or the page that answered your question. You can remind other people of this by asking 'can you please link'?
 1. To change a guideline or process, suggest an edit. After it is merged you can talk about it during the team call if applicable. You can remind other people of this by asking 'can you please send an edit proposal for the handbook'?
