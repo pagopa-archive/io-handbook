@@ -45,6 +45,9 @@ Examples:
 1. We're not for the 100% coverage religion but you should write tests for the core of your app or usually for the part that is more fragile to changes.
 1. Use the OpenAPI standard to defining REST APIs exposed to clients. Follow [Zalando Guidelines](http://zalando.github.io/restful-api-guidelines/) when designing your APIs.
 
+### Workflow automation
+* We maintain [a collection of git hooks](https://github.com/pagopa/git-hooks) that help you automate your workflow. You are encouraged to use, mantain and improve them.
+
 ### NodeJS
 
 * Use [nodenv](https://github.com/nodenv/nodenv) for setting per-project version of `node`.
