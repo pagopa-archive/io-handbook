@@ -111,6 +111,14 @@ The IO team hangs out in the following channels:
 1. It feels rude in video calls to interrupt people. This is because the latency causes you to talk over the speaker for longer than during an in-person meeting. We should not be discouraged by this, the questions and context provided by interruptions are valuable. This is a situation where we have to do something counter-intuitive to make all-remote meetings work. Everyone is encouraged to interrupt the speaker in a video call to ask a question or offer context. We want everyone to contribute instead of a monologue.
 1. We try to end on the scheduled time. It might feel rude to end a meeting, but you're actually allowing all attendees to be on time for their next meeting.
 
+### Video Recordings
+
+1. If possible, try to record every video call that can be useful to other colleagues (es. during the onboarding process)
+1. Since recoding a video call has zero cost, default to recording unless you're going to talk about sensitive or personal topics
+1. When recording a video call with external participants, always ask for consent after starting the recording so that the consent gets recorded
+1. If you're going to share code, increase the font size to make it readable at low resolution (18+ should work)
+1. When recording a screen share with Google Meet, "pin" the video stream so that it takes 100% of the video, or else it gets rescaled to make space for the speaker avatar
+
 ### Writing Style Guidelines
 
 1. We use American English as the standard written language.
