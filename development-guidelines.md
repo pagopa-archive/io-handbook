@@ -48,6 +48,9 @@ Examples:
 ### Workflow automation
 * We maintain [a collection of git hooks](https://github.com/pagopa/git-hooks) that help you automate your workflow. You are encouraged to use, mantain and improve them.
 
+### Workstation setup
+We prepared [a script](https://github.com/pagopa/developer-laptop) that setup a new developer workstation from scratch. It only supports macOS so far. It's not mandatory to use it nor to setup your machine as the script does. If you find it useful, please consider to give feedback and to keep it update by adding new features and fixing bugs.
+
 ### NodeJS
 
 * Use [nodenv](https://github.com/nodenv/nodenv) for setting per-project version of `node`.
