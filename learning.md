@@ -11,7 +11,7 @@ In few words: anything you think your colleagues can benefit from.
  
 
 #### Instructions
-###### before
+#### How to organize a workshop
 * Take the initiative: propose yourself to run a workshop. Alternatively, ask a colleague of yours to do that if you think she/he knows something worth sharing. 
 * Once scheduled, create a public calendar event and share it. Post the link to the event on `#team_tech` channel
 * Define in advance an agenda with what you are going to share. You can use [Fellow](https://pagopa.fellow.app) for that.
