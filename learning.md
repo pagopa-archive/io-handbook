@@ -4,7 +4,7 @@
 * We have a [wiki](https://sites.google.com/pagopa.it/io-wiki/io-home).
 
 ### Internal workshops
-We periodically run short internal workshop sessions to facilitate knowledge sharing between between us.
+We periodically run short internal workshop sessions to facilitate knowledge sharing between us.
 Subject may vary: they can be about explaining some new domain concepts in IO as well as share with other the use of a specific technology or introducing new features in our common tools.
 
 In few words: anything you think your colleagues can benefit from.
