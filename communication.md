@@ -118,6 +118,7 @@ The IO team hangs out in the following channels:
 1. When recording a video call with external participants, always ask for consent after starting the recording so that the consent gets recorded
 1. If you're going to share code, increase the font size to make it readable at low resolution (18+ should work)
 1. When recording a screen share with Google Meet, "pin" the video stream so that it takes 100% of the video, or else it gets rescaled to make space for the speaker avatar
+1. Be careful not to show secrets, password and api keys when you share your screen
 
 ### Writing Style Guidelines
 
