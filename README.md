@@ -10,7 +10,7 @@ The idea is that the notebook will become something like [Gitlab’s](https://ab
 1. 📘 [How To Use This Handbook](how-to.md)
 1. ☎️ [Communication](communication.md)
 1. 👨‍💻 [Who Does What?](who-does-what.md)
-1. 🤯 [Learning and knowledge](learning.md)
+1. 🤯 [Learning and knowledge sharing](learning.md)
 1. 💡 [Development Workflow](development-workflow.md)
 1. 👷🏻 [Development Guidelines](development-guidelines.md)
 1. 👨🏻‍🏫 [Program Management](program.md)
