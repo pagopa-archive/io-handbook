@@ -290,7 +290,8 @@ this.setState((prevState: State, _: Props) => {
 
 ### TESTING
 
-#### Test files whould be close to the component that test
+#### Test files must be close to the component that test
+
 Place test files in a `__tests__` folder at the same level of the file containing the module you want to test. When possible, call test files with the same name of the module file but with `.test.ts` extension.
 To test `foobar.ts`:
 ```
